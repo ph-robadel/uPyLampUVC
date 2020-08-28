@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>uPyLampUVC ESP8266</title>
+        <meta charset="utf-8">
+
+        <script language="javascript">
+            function validacao(){
+                if(document.getElementById("tempo").value == ""){
+                    alert("O campo 'Tempo' está vazio!\nPreencha este campo e tente novamente");
+                    return false;
+                }
+                return true;
+            }
+            
+            function onlynumber(evt) {
+                var theEvent = evt || window.event;
+                var key = theEvent.keyCode || theEvent.which;
+                key = String.fromCharCode(key);
+                var regex = /^[0-9]+$/;
+                if( !regex.test(key) ) {
+                    theEvent.returnValue = false;
+                    if(theEvent.preventDefault) theEvent.preventDefault();
+                }
+            }
+        </script>
+
+        <style>
+            #tempo{
+                width: 100px;
+                border-radius: 3px;
+                margin-left: 8px;
+            }
+            #ligar{
+                height: 32px;
+                width: 103px;
+                background-color: #AAAAAA;
+                border-radius: 6px;
+                font-size: 20px;
+            }       
+        </style> 
+
+    </head>
+    <body style="text-align: center;" %s>
+        <h1>uPyLampUVC ESP8266</h1>
+        <form action="" method="GET" onsubmit="return validacao()">
+            <p>
+                <b>Tempo: </b><input id="tempo" type="text" name="tempo" placeholder="Em segundos" onkeypress="return onlynumber();"/>
+            </p>
+            <input id="ligar" type="submit" value="Ligar"/>
+            <p>%s</p>
+        </form>
+    </body>
+</html>

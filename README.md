@@ -1,1 +1,3 @@
 # uPyLampUVC
+
+Automação com IoT de lâmpadas UVC germicidas para uso em esterilização  em hospitais, etc. Usará microcontrolador de baixo custo com WiFi e  relê, acionando via software (ponto de acesso WiFi + servidor web local  rodando página web como interface). Opcionais : sensor PIR para garantir que não tenha pessoas próximas da lâmpada UVC funcionando; sensor UV  para confirmar que a lâmpada está ligada e tentar medir a irradiância  UVC sobre a superfície a ser esterilizada a fim de calcular  automaticamente quanto tempo a lâmpada UVC precisa ficar ligada;

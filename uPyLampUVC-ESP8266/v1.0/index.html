@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>uPyLampUVC ESP8266</title>
+        <meta charset="utf-8">
+        <style>
+            #tempo{
+                width: 100px;
+                border-radius: 3px;
+                margin-left: 8px;
+            }
+            #ligar{
+                height: 32px;
+                width: 100px;
+                background-color: #AAAAAA;
+                border-radius: 7px;
+                font-size: 20px;
+            }        
+        </style> 
+    </head>
+    <body style="text-align: center;" %s>
+        <h1>uPyLampUVC ESP8266</h1>
+        <form action="" method="GET" >
+            <p>
+                <b>Tempo: </b><input id="tempo" type="text" name="Tempo" placeholder="Em segundos"/>
+            </p>
+            <p><i>Digite apenas números</i></p>
+            <input id="ligar" type="submit" value="Ligar"/>
+            <p style="color: red;">%s</p>
+        </form>
+    </body>
+</html>
